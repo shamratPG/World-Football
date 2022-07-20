@@ -61,7 +61,7 @@ header .hero-imgs {
     width: 50%;
     height: 500px;
     background-image: url("photo/marcello.jpg");
-    background-size: 83%;
+    background-size: 92%;
     background-repeat: no-repeat;
     background-position: right;
     animation: changeImage 10s cubic-bezier(0, 1.28, .06, .94) infinite;
@@ -74,7 +74,7 @@ header .hero-imgs {
 
     50% {
         background-image: url("photo/messi.jpg");
-        background-size: 90%;
+        /* background-size: 90%; */
     }
 
 }
@@ -295,6 +295,7 @@ footer .social-links a {
         width: 95%;
         height: 385px;
         margin-top: 30px;
+        background-size: 85%;
     }
 
     main {
@@ -351,6 +352,7 @@ footer .social-links a {
     header .hero-imgs {
         width: 50%;
         height: 380px;
+        background-size: 85%;
     }
 
     header .hero-text p {
