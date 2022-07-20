@@ -18,7 +18,7 @@ Header {
     display: flex;
     justify-content: space-evenly;
     padding: 1.2em 1.2em 0 1.2em;
-    background: rgb(7, 9, 10);
+    background: rgb(0, 0, 0);
     color: white;
     border-radius: 1em;
 }
@@ -58,7 +58,7 @@ header .hero-text button:hover {
 header .hero-imgs {
     width: 50%;
     height: 500px;
-    background-image: url("/photo/marcello.png");
+    background-image: url("photo/marcello.jpg");
     background-size: 82%;
     background-repeat: no-repeat;
     background-position: right;
@@ -68,25 +68,25 @@ header .hero-imgs {
 
 @keyframes changeImage {
     0% {
-        background-image: url("/photo/marcello.png");
+        background-image: url("photo/marcello.jpg");
         background-size: 82%;
         background-position: right;
     }
 
     25% {
-        background-image: url("/photo/marcello.png");
+        background-image: url("photo/marcello.jpg");
         background-size: 82%;
         background-position: right;
     }
 
     50% {
-        background-image: url("/photo/messi.png");
+        background-image: url("photo/messi.jpg");
         background-size: 90%;
         background-position: right;
     }
 
     75% {
-        background-image: url("/photo/messi.png");
+        background-image: url("photo/messi.jpg");
         background-size: 90%;
         background-position: right;
     }
