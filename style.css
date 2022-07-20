@@ -5,7 +5,8 @@
 }
 
 body {
-    width: 1200px;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
 }
@@ -13,7 +14,7 @@ body {
 /* 
 -------------- Header Section-------------  */
 
-Header {
+header {
     margin: 50px 0;
     display: flex;
     justify-content: center;
@@ -47,6 +48,7 @@ header .hero-text button {
     padding: 10px 25px;
     background: rgba(255, 0, 0, 0.8);
     border-radius: 5px;
+    border: none;
 }
 
 header .hero-text button:hover {
@@ -63,7 +65,6 @@ header .hero-imgs {
     background-repeat: no-repeat;
     background-position: right;
     animation: changeImage 10s cubic-bezier(0, 1.28, .06, .94) infinite;
-
 }
 
 @keyframes changeImage {
@@ -152,6 +153,11 @@ main .blogs .blog-icon {
     margin-right: 20px;
 }
 
+.view-all {
+    display: none;
+}
+
+
 /* 
 -------------- Live Match Section-------------  
 */
@@ -227,10 +233,12 @@ footer .footer-menu {
     width: 70%;
     margin: 40px auto;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 footer .footer-menu a {
+    padding: 20px;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -248,4 +256,152 @@ footer .social-links a {
     text-decoration: none;
     font-size: 2.5em;
     color: white;
+}
+
+/* 
+-------------- Responsive Mobile Design -------------  
+*/
+
+@media screen and (max-width: 556px) {
+    body {
+        width: 90%;
+        margin: auto;
+    }
+
+    header {
+        flex-direction: column;
+        margin: 25px 0;
+    }
+
+    header .hero-text {
+        width: 95%;
+        text-align: center;
+        padding: 1em;
+    }
+
+    header .hero-text h1 {
+        font-size: 3em;
+        line-height: 1.5em;
+    }
+
+    header .hero-text p {
+        line-height: 1.8em;
+        height: 52px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    header .hero-imgs {
+        width: 95%;
+        height: 385px;
+        margin-top: 30px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-menu {
+        font-size: 1.5em;
+        width: 95%;
+        padding: 20px;
+        background-color: white;
+        margin-right: 0;
+    }
+
+    main .blogs {
+        width: 95%;
+        margin-top: 40px;
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
+
+    main .live-links {
+        margin-top: 40px;
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+
+    footer .footer-menu {
+        flex-direction: column;
+    }
+
+    footer .footer-menu a {
+        padding-bottom: 30px;
+    }
+}
+
+/* 
+-------------- Responsive Tablet Design -------------  
+*/
+
+@media screen and (min-width: 557px) and (max-width: 992px) {
+
+    header .hero-text {
+        width: 48%;
+        align-self: center;
+        padding-left: 1em;
+    }
+
+    header .hero-text h1 {
+        font-size: 2.5em;
+    }
+
+    header .hero-imgs {
+        width: 50%;
+        height: 380px;
+    }
+
+    header .hero-text p {
+        line-height: 1.8em;
+        height: 52px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .side-menu {
+        width: auto;
+        height: auto;
+        background-color: white;
+        border-radius: 1em;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 0;
+    }
+
+    main .blogs {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 40px;
+    }
+
+    main .blog:last-child {
+        display: none;
+    }
+
+    .view-all {
+        margin: 40px auto;
+        display: block;
+        text-align: center;
+    }
+
+    .view-all button {
+        font-size: 1em;
+        font-weight: bold;
+        color: white;
+        padding: 10px 30px;
+        background: rgba(255, 0, 0, 0.8);
+        border-radius: 5px;
+        border: none;
+    }
+
+    main .live-links {
+        width: 98%;
+        margin-top: 40px;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
