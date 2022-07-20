@@ -84,18 +84,20 @@ header .hero-imgs {
 
 main {
     display: flex;
+    justify-content: space-between;
 }
 
 /* Side Menu */
 
 .side-menu {
-    height: 280px;
-    padding: 30px;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
     background-color: black;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-right: 1.5em;
 }
@@ -148,4 +150,102 @@ main .blogs .blog-text {
 
 main .blogs .blog-icon {
     margin-right: 20px;
+}
+
+/* 
+-------------- Live Match Section-------------  
+*/
+
+
+main .live-links {
+    width: calc(100% - 300px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5em;
+}
+
+main .live-link {
+    box-shadow: -3px 14px 86px 7px rgba(0, 0, 0, 0.18);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+main .live-link .link-img-area {
+    display: flex;
+    align-items: center;
+}
+
+main .live-link img {
+    width: 44%;
+}
+
+
+main .live-link span {
+    font-weight: bold;
+    padding: 15px;
+}
+
+main .live-link-text {
+    text-align: center;
+}
+
+main .live-link-text p {
+    margin: 20px 0 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+main .live-link-text small {
+    color: gray;
+}
+
+
+
+/* 
+-------------- Footer Section-------------  
+*/
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 150px;
+    padding: 100px 0 50px;
+}
+
+footer h2 {
+    margin-bottom: 50px;
+}
+
+footer hr {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 70%;
+    margin: 0 auto;
+}
+
+footer .footer-menu {
+    width: 70%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .footer-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer .social-links {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+footer .social-links a {
+    text-decoration: none;
+    font-size: 2.5em;
+    color: white;
 }
