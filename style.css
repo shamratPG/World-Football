@@ -111,7 +111,8 @@ main {
     text-align: center;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    background-color: rgb(252, 252, 252);
+    background-color: rgb(255, 255, 255);
+    box-shadow: -3px 14px 86px 7px rgba(0, 0, 0, 0.18);
 }
 
 .side-menu .side-btn:hover {
@@ -310,9 +311,14 @@ footer .social-links a {
     .side-menu {
         font-size: 1.5em;
         width: 95%;
+        height: auto;
         padding: 20px;
         background-color: white;
         margin-right: 0;
+    }
+
+    .side-menu a {
+        margin-top: 20px;
     }
 
     main .blogs {
