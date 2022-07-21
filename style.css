@@ -9,7 +9,7 @@
 
 body {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
 }
@@ -103,7 +103,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-right: 1.5em;
+    margin-right: 1em;
 }
 
 .side-menu .side-btn {
@@ -127,7 +127,7 @@ main {
 main .blogs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5em;
+    gap: .5em;
 }
 
 main .blogs .blog {
@@ -157,7 +157,11 @@ main .blogs .blog-text {
 }
 
 main .blogs .blog-icon {
-    margin-right: 20px;
+    margin-right: 2em;
+}
+
+main .blogs .blog-icon i {
+    padding-right: 5px;
 }
 
 .view-all {
@@ -171,10 +175,10 @@ main .blogs .blog-icon {
 
 
 main .live-links {
-    width: calc(100% - 300px);
+    width: calc(100% - 260px);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5em;
+    gap: .5em;
 }
 
 main .live-link {
@@ -185,7 +189,10 @@ main .live-link {
 
 main .live-link .link-img-area {
     display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
     align-items: center;
+    width: 98%;
 }
 
 main .live-link img {
@@ -195,7 +202,7 @@ main .live-link img {
 
 main .live-link span {
     font-weight: bold;
-    padding: 15px;
+    /* padding: 15px; */
 }
 
 main .live-link-text {
@@ -269,9 +276,8 @@ footer .social-links a {
 -------------- Responsive Mobile Design -------------  
 */
 
-@media screen and (max-width: 556px) {
+@media screen and (max-width: 480px) {
     body {
-        width: 90%;
         margin: auto;
     }
 
@@ -300,7 +306,7 @@ footer .social-links a {
 
     header .hero-imgs {
         width: 95%;
-        height: 385px;
+        height: 330px;
         margin-top: 30px;
         background-size: 85%;
     }
@@ -350,7 +356,8 @@ footer .social-links a {
 -------------- Responsive Tablet Design -------------  
 */
 
-@media screen and (min-width: 557px) and (max-width: 992px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
 
     header .hero-text {
         width: 48%;
@@ -418,5 +425,31 @@ footer .social-links a {
         width: 98%;
         margin-top: 40px;
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 
+-------------- Responsive Small Screen Design -------------  
+*/
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header .hero-imgs {
+        height: 430px;
+    }
+
+    header .hero-text h1 {
+        font-size: 2.5em;
+        line-height: 1.3em;
+    }
+
+    header .hero-text p {
+        height: 52px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    main .blogs .blog-icon {
+        margin-top: 10px;
+        display: block;
     }
 }
