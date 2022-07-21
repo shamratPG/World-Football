@@ -162,7 +162,7 @@ main .blogs .blog-icon i {
 
 
 /* ----------------------------------
-View All Button for tablet view Only 
+(View All) Button for tablet view Only 
 ------------------------------------*/
 
 .view-all {
@@ -429,7 +429,7 @@ footer .social-links a {
         display: none;
     }
 
-    /* View All Button */
+    /* (View All) Button */
 
     .view-all {
         margin: 40px auto;
