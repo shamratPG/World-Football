@@ -64,7 +64,7 @@ header .hero-imgs {
     background-size: 92%;
     background-repeat: no-repeat;
     background-position: right;
-    animation: changeImage 10s cubic-bezier(0, 1.28, .06, .94) infinite;
+    animation: changeImage 15s cubic-bezier(0, 1.28, .06, .94) infinite;
 }
 
 @keyframes changeImage {
@@ -94,7 +94,7 @@ main {
     height: 250px;
     padding: 20px;
     background-color: black;
-    border-radius: 1em;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -160,13 +160,28 @@ main .blogs .blog-icon i {
     padding-right: 5px;
 }
 
+
+/* ----------------------------------
+View All Button for tablet view Only 
+------------------------------------*/
+
 .view-all {
     display: none;
 }
 
+.view-all button {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    padding: 10px 30px;
+    background: rgba(255, 0, 0, 0.8);
+    border-radius: 5px;
+    border: none;
+}
+
 
 /* 
--------------- Live Match Section-------------  
+-------------- Live Match Section (match.html) -------------  
 */
 
 
@@ -275,6 +290,9 @@ footer .social-links a {
         margin: auto;
     }
 
+
+    /* Header Section */
+
     header {
         flex-direction: column;
         margin: 25px 0;
@@ -287,7 +305,7 @@ footer .social-links a {
     }
 
     header .hero-text h1 {
-        font-size: 3em;
+        font-size: 2em;
         line-height: 1.5em;
     }
 
@@ -304,6 +322,9 @@ footer .social-links a {
         margin-top: 30px;
         background-size: 85%;
     }
+
+
+    /* Main Section */
 
     main {
         display: flex;
@@ -331,11 +352,16 @@ footer .social-links a {
         gap: 1.5em;
     }
 
+    /* Main(match.html) Section */
+
     main .live-links {
         margin-top: 40px;
         width: 95%;
         grid-template-columns: 1fr;
     }
+
+
+    /* Footer Section */
 
     footer .footer-menu {
         flex-direction: column;
@@ -352,6 +378,7 @@ footer .social-links a {
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
+    /* Header Section */
 
     header .hero-text {
         width: 48%;
@@ -360,12 +387,12 @@ footer .social-links a {
     }
 
     header .hero-text h1 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     header .hero-imgs {
         width: 50%;
-        height: 380px;
+        height: 295px;
         background-size: 85%;
     }
 
@@ -375,6 +402,9 @@ footer .social-links a {
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
+
+    /* Main Section */
 
     main {
         flex-direction: column;
@@ -399,21 +429,15 @@ footer .social-links a {
         display: none;
     }
 
+    /* View All Button */
+
     .view-all {
         margin: 40px auto;
         display: block;
         text-align: center;
     }
 
-    .view-all button {
-        font-size: 1em;
-        font-weight: bold;
-        color: white;
-        padding: 10px 30px;
-        background: rgba(255, 0, 0, 0.8);
-        border-radius: 5px;
-        border: none;
-    }
+    /* Main(match.html) Section */
 
     main .live-links {
         width: 98%;
@@ -423,10 +447,13 @@ footer .social-links a {
 }
 
 /* 
--------------- Responsive Small Screen Design -------------  
+-------------- Responsive Small Screen(Laptop) Design -------------  
 */
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* Header Section */
+
     header .hero-imgs {
         height: 430px;
     }
@@ -441,6 +468,8 @@ footer .social-links a {
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
+    /* Main Section */
 
     main .blogs .blog-icon {
         margin-top: 10px;
