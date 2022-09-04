@@ -15,7 +15,7 @@
 Practice website on proper implementation of HTML semantic, CSS flexbox and grid and responsive website.
 
 ### Screenshot
-![]()
+![](World-Football.png)
 
 
 ### Links
@@ -28,7 +28,7 @@ Practice website on proper implementation of HTML semantic, CSS flexbox and grid
 - Semantic HTML5 markup
 - CSS 5
 - Flexbox
-- JavaScript
+- Grid
 
 
 ## Author
